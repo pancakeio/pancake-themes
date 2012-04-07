@@ -1,0 +1,246 @@
+/*****************************************************************************
+  Chalkboard Neo
+  Author: Pancake.io
+  Credits:
+    Normalize.css     http://necolas.github.com/normalize.css/
+    Font Awesome      http://fortawesome.github.com/Font-Awesome/)
+    Google Web Fonts  http://www.google.com/webfonts
+******************************************************************************/
+
+@import '../../resources/base';
+@import 'normalize.css';
+@import 'font-awesome.css';
+@import url(http://fonts.googleapis.com/css?family=Gudea:400);
+@import url(http://fonts.googleapis.com/css?family=Gudea:700);
+@import url(http://fonts.googleapis.com/css?family=Gudea:400italic);
+
+@link: #4682b4;
+@link_hover: #7bcbcd;
+@button: #fff;
+@button_hover: #4682b4;
+@bg_1: #222;
+@co_1: #eee;
+@co_2: #fff;
+
+// palette 2
+/*@link: #4682b4;
+@link_hover: #7bcbcd;
+@button: #fff;
+@button_hover: #4682b4;
+@bg_1: #fff;
+@co_1: #222;
+@co_2: #333;*/
+
+/*****************************************************************************
+  Elements
+******************************************************************************/
+h1, h2, h3 {
+  font-family: 'Georgia';
+  font-weight: normal;
+  color: @co_2;
+  line-height: normal;
+  margin-top: 1.2em;
+  margin-bottom: .5em;
+  &:first-child {
+    margin-top: 0.5em;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: @link;
+  &:hover {
+    color: @link_hover;
+  }
+}
+
+blockquote {
+  padding-left: 15px;
+  border-left: 4px solid #999;
+}
+
+code {
+  font-family: "Menlo","Monaco", "Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+  .corners(3px);
+  border: 1px solid #555;
+  /*background: #f9f9f9;*/
+  padding: 0px 3px;
+  display: inline-block;
+  /*color: #595959;*/
+  /*line-height: 1.3em;*/
+  font-size: 85%;
+  background: #333;
+}
+
+pre {
+  border: 1px solid @link;
+  background: #333;
+  .corners(3px);
+  padding: 7px;
+  code {
+    border: none;
+    background: transparent;
+    padding: none;
+  }
+}
+
+table {
+  th, td { border: 1px solid #555; padding: 6px 10px; }
+  th { color: white; background: #555; }
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+  padding: 5px;
+  border: 1px solid #999;
+  font-size: 108%;
+  margin-bottom: 6px;
+  &:focus {
+    outline: none;
+    border-color: #888;
+    .box_shadow(0 0 4px #ccc);
+  }
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  color: #555;
+  border: 1px solid #ddd;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 10px;
+  .corners(3px);
+  margin-bottom: 5px;
+  .gradient(@button,darken(@button, 10%));
+  /*.transition(all, 100ms);*/
+  &:hover {
+    color: white;
+    border-color: darken(@button_hover, 20%);
+    .gradient(@button_hover,darken(@button_hover, 10%));
+  }
+  &:active {
+    .box_shadow(inset 0 0 10px darken(@button_hover, 30%))
+  }
+}
+
+/*****************************************************************************
+  Layout
+******************************************************************************/
+
+body {
+  background: @bg_1;
+  color: @co_1;
+  font: 108%/1.4 'Gudea', sans-serif;
+}
+
+header {
+  width: 100%;
+  font-size: 4em;
+  color: white;
+  background: #191919;
+  background-image: url(http://s3.amazonaws.com/zephyr_production/resources/sp_type.png);
+  background-repeat: repeat;
+  font-weight: normal;
+  font-family: 'Georgia';
+  border-bottom: 2px solid @link;
+  #header_inner {
+    text-align: center;
+    padding: 40px 20px 20px;
+    width: 680px;
+    margin: 0 auto;
+  }
+
+  + #container {
+    margin-top: 20px;
+  }
+}
+
+#container {
+  min-height: 450px;
+  padding: 15px 20px 20px;
+  margin: 50px auto 50px;
+  width: 600px;
+  .iframe_viewer iframe {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 500px;
+  }
+
+  .image_viewer {
+    padding-top: 50px;
+    img {
+      background: white;
+      border: 1px solid #aaa;
+      .box_shadow(0 2px 10px #ccc);
+      display: block;
+      margin: 0 auto;
+    }
+  }
+/*
+  #welcome {
+    width: 700px - 26px;
+    margin: 10px;
+    padding: 8px 10px;
+    background: #FEFCF1;
+    border: 3px solid #FADF5E;
+    font-size: 108%;
+    .corners(3px);
+    color: #444;
+    h2 { font-size: 1.4em; margin-bottom: 5px; color: #222; font-weight: 500 }
+  }
+
+  #main {
+    float: right;
+    width: 460px;
+    margin: 10px;
+  }
+
+  #sidebar {
+    float: left;
+    width: 220px;
+    margin: 10px;
+  }*/
+}
+
+footer {
+  width: 680px;
+  margin: 30px auto 50px;
+  padding: 0 20px 0;
+  border-top: 1px solid #444;
+  text-align: right;
+  font-size: 13px;
+  a, a span { .transition(color, 150ms); }
+  a {
+    color: #333;
+    padding: 15px 0 20px;
+    display: block;
+    span { color: darken(@link, 20%); }
+    &:hover {
+      color: #ccc;
+      span { color: @link; }
+    }
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  header #header_inner, #container, footer {
+    width: 100%;
+  }
+  #container {
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .box_shadow(none);
+    border: none;
+    margin: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+}
