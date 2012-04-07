@@ -1,9 +1,9 @@
----
+<!---
 title: Theme Preview
 header: Chalkboard Neo
 blank: true
 css: http://pancakeio.github.com/pancake-themes/themes/Chalkboard%20Neo/chalkboardneo.css
----
+--->
 
 # About
 
