@@ -2,12 +2,12 @@
 title: Theme Preview
 header: Chalkboard Neo
 blank: true
-css: /stylesheets/themes/theme2.css
+css: http://pancakeio.github.com/pancake-themes/themes/Chalkboard%20Neo/chalkboardneo.css
 ---
 
 # About
 
-<a href='/theme/install?theme=http://pancake.io/7d4e94/themes/publicn.css' class='button'><i class="icon-heart"></i> Install Theme</a> <a href='http://pancake.io/7d4e94/themes/publicn.css' class='button'><i class="icon-download-alt"></i>Download Theme</a>
+<a href='http://pancake.io/theme/install?theme=http://pancakeio.github.com/pancake-themes/themes/Chalkboard%20Neo/chalkboardneo.css' class='button'><i class="icon-heart"></i> Install Theme</a> <a href='http://pancakeio.github.com/pancake-themes/themes/Chalkboard%20Neo/chalkboardneo.css' class='button'><i class="icon-download-alt"></i>Download Theme</a>
 
 
 Chalkboard Neo is an elegant, dark theme for [Pancake.io](http://pancake.io). Comes with support for [Font Awesome](http://fortawesome.github.com/Font-Awesome/)!
