@@ -53,3 +53,16 @@ Sugar plum pudding candy canes soufflé tootsie roll faworki halvah.
     <td>row 2, cell 2</td>
   </tr>
 </table>
+
+## Header 2
+
+    ---
+    title: Pancake.io Guide - Page Configuration
+    header: Pancake.io Guides
+    css:
+    - my-style.css
+    js:
+    - http://code.jquery.com/jquery-1.7.min.js
+    - http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+    - bootstrap-scrollspy.js
+    ---
