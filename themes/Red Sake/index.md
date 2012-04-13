@@ -1,5 +1,5 @@
 <!---
-title: Theme Preview
+title: Red Sake | Pancake.io Theme Preview
 header: Red Sake
 blank: true
 css: http://pancakeio.github.com/pancake-themes/themes/Red%20Sake/red_sake.css
